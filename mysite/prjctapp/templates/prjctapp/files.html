@@ -1,0 +1,11 @@
+<div id="MYYYYYYYYY">
+{% if file_list %}
+    <ul>
+    {% for file_name in file_list %}
+        <li><img src="{{ file_name.upload.url }}" style="width:640px; height:480px"></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No files are available.</p>
+{% endif %}
+</div>
